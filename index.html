@@ -1,113 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="normalize.css" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="sidebar">
-        <div class="sidebar-container">
-          <div class="logo">Dashboard</div>
-          <div class="navigations-container">
-            <div class="navigations">
-              <a href="">Home</a>
-              <a href="">Profile</a>
-              <a href="">Messages</a>
-              <a href="">History</a>
-              <a href="">Tasks</a>
-              <a href="">Communities</a>
-            </div>
-            <div class="settings">
-              <a href="">Settings</a>
-              <a href="">Support</a>
-              <a href="">Privacy</a>
-            </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="normalize.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <div class="sidebar-container">
+        <div class="logo">Dashboard</div>
+        <div class="navigations-container">
+          <div class="navigations">
+            <a href="">Home</a>
+            <a href="">Profile</a>
+            <a href="">Messages</a>
+            <a href="">History</a>
+            <a href="">Tasks</a>
+            <a href="">Communities</a>
+          </div>
+          <div class="settings">
+            <a href="">Settings</a>
+            <a href="">Support</a>
+            <a href="">Privacy</a>
           </div>
         </div>
       </div>
-      <div class="header">
-        <div class="header-upper-grid">
-          <div class="header-search-container">
-            <img src="images/home.svg" alt="" class="svg svg-home" />
-            <input type="search" name="searchbar" id="searchbar" />
-          </div>
-          <div class="header-right-container">
-            <button class="notifications"></button>
-            <div class="profile-container">
-              <img src="images/pfp.png" class="profile-picture"></img>
-              <div class="profile-name">Melowoof</div>
-            </div>
-          </div>
+    </div>
+    <div class="header">
+      <div class="header-upper-grid">
+        <div class="header-search-container">
+          <img src="images/home.svg" alt="" class="svg svg-home" />
+          <input type="search" name="searchbar" id="searchbar" />
         </div>
-        <div class="header-lower-grid">
-          <div class="welcome-container">
+        <div class="header-right-container">
+          <button class="notifications"></button>
+          <div class="profile-container">
             <img src="images/pfp.png" class="profile-picture"></img>
-            <div class="name-container">
-                Hi there,
-                <div class="name">Melo (@melowoof)</div>
+            <div class="profile-name">Melowoof</div>
+          </div>
+        </div>
+      </div>
+      <div class="header-lower-grid">
+        <div class="welcome-container">
+          <img src="images/pfp.png" class="profile-picture"></img>
+          <div class="name-container">
+            Hi there,
+            <div class="name">Melo (@melowoof)</div>
+          </div>
+        </div>
+        <div class="button-container">
+          <button class="new">New</button><button class="upload">Upload</button><button class="share">Share</button>
+        </div>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="your-projects">
+        <div class="container-title">Your Projects</div>
+        <div class="project-container">
+          <div class="project">
+            <div class="project-text">
+              <div class="project-title">Super Cool Project</div>
+              <div class="project-description">Do you expect me to read this description?</div>
+            </div>
+            <div class="project-buttons"><button></button><button></button><button></button></div>
+          </div>
+          <div class="project">
+            <div class="project-text">
+              <div class="project-title">Less Cool Project</div>
+              <div class="project-description">Middle child project</div>
+            </div>
+            <div class="project-buttons"><button></button><button></button><button></button></div>
+          </div>
+          <div class="project">
+            <div class="project-text">
+              <div class="project-title">Impossible App</div>
+              <div class="project-description">Nope</div>
+            </div>
+            <div class="project-buttons"><button></button><button></button><button></button></div>
+          </div>
+          <div class="project">
+            <div class="project-text">
+              <div class="project-title">Easy Peasy App</div>
+              <div class="project-description">Simple 650 steps guide to making an application.</div>
+            </div>
+            <div class="project-buttons"><button></button><button></button><button></button></div>
+          </div>
+          <div class="project">
+            <div class="project-text">
+              <div class="project-title">Ad Blocker</div>
+              <div class="project-description">No</div>
+            </div>
+            <div class="project-buttons"><button></button><button></button><button></button></div>
+          </div>
+          <div class="project">
+            <div class="project-text">
+              <div class="project-title">Money Maker</div>
+              <div class="project-description">Cheap methods to print your own money at home</div>
+            </div>
+            <div class="project-buttons"><button></button><button></button><button></button></div>
+          </div>
+        </div>
+      </div>
+      <div class="announcements">
+        <div class="container-title">Announcements</div>
+        <div class="announcement-container">
+          <div class="announcement">
+            <div class="announcement-title">Site Maintenance</div>
+            <div class="announcement-description">Don't get caught by pirates.</div>
+          </div>
+          <div class="announcement">
+            <div class="announcement-title">Community Share Day</div>
+            <div class="announcement-description">Share your potlucks this weekend !!</div>
+          </div>
+          <div class="announcement">
+            <div class="announcement-title">Updated Privacy</div>
+            <div class="announcement-description">Permissions update: Removed user privacy</div>
+          </div>
+        </div>
+      </div>
+      <div class="trendings">
+        <div class="container-title">Trending</div>
+        <div class="trending-container">
+          <div class="trending">
+            <img src="images/pfp.png" alt="" class="profile-picture">
+            <div>
+              <div class="trending-profile-name">@tegan</div>
+              <div class="trending-description">World War Builder</div>
             </div>
           </div>
-          <div class="button-container">
-            <button class="new">New</button
-            ><button class="upload">Upload</button
-            ><button class="share">Share</button>
+          <div class="trending">
+            <img src="images/pfp.png" alt="" class="profile-picture">
+            <div>
+              <div class="trending-profile-name">@morgan</div>
+              <div class="trending-description">Super Cool Project</div>
+            </div>
+          </div>
+          <div class="trending">
+            <img src="images/pfp.png" alt="" class="profile-picture">
+            <div>
+              <div class="trending-profile-name">@kendall</div>
+              <div class="trending-description">Life Changing App</div>
+            </div>
+          </div>
+          <div class="trending">
+            <img src="images/pfp.png" alt="" class="profile-picture">
+            <div>
+              <div class="trending-profile-name">@alex</div>
+              <div class="trending-description">No Traffic Maker</div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="main-content">
-        <div class="your-projects">
-          <div class="container-title">Your Projects</div >
-          <div class="project-container">
-        <div class="project">
-          <div class="project-text">
-            <div class="project-title">Super Cool Project</div>
-            <div class="project-description">Do you expect me to read this description?</div>
-          </div>
-          <div class="project-buttons"><button></button><button></button><button></button></div>
-        </div>
-        <div class="project">
-          <div class="project-text">
-            <div class="project-title">Less Cool Project</div>
-            <div class="project-description">Middle child project</div>
-          </div>
-          <div class="project-buttons"><button></button><button></button><button></button></div>
-        </div>
-        <div class="project">
-          <div class="project-text">
-            <div class="project-title">Impossible App</div>
-            <div class="project-description">Nope</div>
-          </div>
-          <div class="project-buttons"><button></button><button></button><button></button></div>
-        </div>
-        <div class="project">
-          <div class="project-text">
-            <div class="project-title">Easy Peasy App</div>
-            <div class="project-description">Simple 650 steps guide to making an application.</div>
-          </div>
-          <div class="project-buttons"><button></button><button></button><button></button></div>
-        </div>
-        <div class="project">
-          <div class="project-text">
-            <div class="project-title">Ad Blocker</div>
-            <div class="project-description">No</div>
-          </div>
-          <div class="project-buttons"><button></button><button></button><button></button></div>
-        </div>
-        <div class="project">
-          <div class="project-text">
-            <div class="project-title">Money Maker</div>
-            <div class="project-description">Cheap methods to print your own money at home</div>
-          </div>
-          <div class="project-buttons"><button></button><button></button><button></button></div>
-        </div>
-      </div>
     </div>
-      <div class="announcements"><div class="container-title">Announcements</div></div>
-      <div class="trending"><div class="container-title">Trending</div></div></div>
-    </div>
-  </body>
+  </div>
+  </div>
+</body>
+
 </html>
